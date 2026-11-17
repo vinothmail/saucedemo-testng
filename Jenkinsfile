@@ -53,7 +53,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'mvn -B clean test -DsuiteXmlFile=testng-smoke.xml -Dheadless=true'
+                bat 'mvn -B clean test -DsuiteXmlFile=testng-smoke.xml -Dheadless=true'
             }
             post {
                 always {
@@ -71,7 +71,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'mvn -B clean test -DsuiteXmlFile=testng.xml -Dheadless=true'
+                bat 'mvn -B clean test -DsuiteXmlFile=testng.xml -Dheadless=true'
             }
             post {
                 always {
